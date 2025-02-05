@@ -3,6 +3,7 @@ import { TanStackRouterDevtools } from '@tanstack/router-devtools'
 
 export const Route = createRootRoute({
   component: RootComponent,
+  notFoundComponent: () => "404 Not Found",
 })
 
 function RootComponent() {

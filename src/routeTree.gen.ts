@@ -11,10 +11,10 @@
 // Import Routes
 
 import { Route as rootRoute } from './routes/__root'
-import { Route as ListImport } from './routes/list'
 import { Route as IndexImport } from './routes/index'
-import { Route as IssuesIndexImport } from './routes/issues/index'
 import { Route as IssuesIdImport } from './routes/issues/$id'
+import { Route as IssuesIndexImport } from './routes/issues/index'
+import { Route as ListImport } from './routes/list'
 
 // Create/Update Routes
 
