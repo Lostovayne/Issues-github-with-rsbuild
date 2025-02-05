@@ -10,8 +10,8 @@ function RootComponent() {
   return (
     <>
       <div className="p-2 flex gap-2 text-lg">
-      <h1>
-        Git Issues <small>Seguimiento de problemas</small>
+      <h1 className='text-2xl font-semibold' >
+        Git Issues <small className='text-gray-500 text-base' >Seguimiento de problemas</small>
       </h1>
       </div>
       <hr />

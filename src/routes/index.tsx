@@ -6,6 +6,6 @@ export const Route = createFileRoute('/')({
 
 function HomeComponent() {
   return (
-    <Navigate to="/list" /> 
+    <Navigate to="/issues/list" /> 
   )
 }
