@@ -1,0 +1,25 @@
+{
+  "name": "issues-github",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "dev": "rsbuild dev --port 3001",
+    "build": "rsbuild build",
+    "preview": "rsbuild preview"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.8",
+    "@types/react-dom": "^19.0.3",
+    "@tanstack/router-plugin": "^1.99.6",
+    "@rsbuild/core": "^1.0.2",
+    "@rsbuild/plugin-react": "^1.0.1"
+  },
+  "dependencies": {
+    "@tanstack/react-router": "^1.99.6",
+    "@tanstack/router-devtools": "^1.99.6",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  }
+}
