@@ -41,7 +41,7 @@ To install the application, follow these steps:
    ```bash
    bun dev
    ```
-   The application will be available at `http://localhost:3002`.
+   The application will be available at `http://localhost:3001`.
 
 ## Usage
 

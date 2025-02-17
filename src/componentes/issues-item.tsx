@@ -2,7 +2,7 @@ import { useNavigate } from "@tanstack/react-router";
 import { FiInfo, FiMessageSquare } from "react-icons/fi";
 
 export const IssueItem = () => {
-  const navigate = useNavigate({ from: "/issues/issue/$id" });
+  const navigate = useNavigate({ from: "/issues/issue" });
 
   return (
     <div className="flex items-center px-2 py-3 mb-5 border rounded-md bg-slate-200 hover:bg-slate-300 transition-colors">
@@ -22,6 +22,7 @@ export const IssueItem = () => {
         <span className="text-gray-500">
           #25581 opened 2 days ago by{" "}
           <span className="font-bold">segfaulty1</span>
+          
         </span>
       </div>
 
