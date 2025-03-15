@@ -1,6 +1,6 @@
 import { createFileRoute, useNavigate } from "@tanstack/react-router";
 import { FiSkipBack } from "react-icons/fi";
-import { IssueComment } from "../../../componentes/issue-comment";
+import { IssueComment } from "../../../issues/componentes/issue-comment";
 
 export const Route = createFileRoute("/issues/issue/$id")({
   component: RouteComponent,

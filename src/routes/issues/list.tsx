@@ -1,7 +1,7 @@
 import { createFileRoute, ErrorComponent } from "@tanstack/react-router";
 import { Suspense } from "react";
-import { IssueList } from "../../componentes/issues-list";
-import { LabelPicker } from "../../componentes/label-picker";
+import { IssueList } from "../../issues/componentes/issues-list";
+import { LabelPicker } from "../../issues/componentes/label-picker";
 export const Route = createFileRoute("/issues/list")({
   component: RouteComponent,
   errorComponent: ErrorComponent,

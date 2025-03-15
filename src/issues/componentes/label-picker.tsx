@@ -1,11 +1,7 @@
-import { useQuery } from "@tanstack/react-query";
-import { getLabels } from "../actions";
+import { useLabels } from "../hooks/useLabels";
 
 export const LabelPicker = () => {
-  const labelsQuery = useQuery({
-    queryKey: ["labels"],
-    queryFn: getLabels,
-  });
+  const { labelsQuery } = useLabels();
 
   if (labelsQuery.isLoading)
     return (
