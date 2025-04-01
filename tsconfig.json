@@ -1,3 +1,4 @@
+// Uncaught ReferenceError: process is not defined
 {
   "compilerOptions": {
     "strict": true,
@@ -6,6 +7,8 @@
     "target": "ESNext",
     "module": "ESNext",
     "moduleResolution": "Bundler",
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "types": ["node"]  // <-- Añade esto para incluir definiciones de Node.js
+    
   },
 }

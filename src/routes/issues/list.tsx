@@ -2,6 +2,7 @@ import { createFileRoute, ErrorComponent } from "@tanstack/react-router";
 import { Suspense } from "react";
 import { IssueList } from "../../issues/componentes/issues-list";
 import { LabelPicker } from "../../issues/componentes/label-picker";
+
 export const Route = createFileRoute("/issues/list")({
   component: RouteComponent,
   errorComponent: ErrorComponent,
@@ -13,7 +14,6 @@ function RouteComponent() {
       <div className="col-span-1 sm:col-span-2">
         <IssueList />
       </div>
-
       <div className="col-span-1 px-2">
         <Suspense fallback={<div>Loading...</div>}>
           <LabelPicker />
