@@ -4,9 +4,13 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import { routeTree } from "./routeTree.gen";
 
+const queryClient = new QueryClient();
 // Set up a Router instance
 const router = createRouter({
   routeTree,
+  context: {
+    queryClient,
+  },
   defaultPreload: "intent",
 });
 
@@ -18,7 +22,6 @@ declare module "@tanstack/react-router" {
 }
 
 const rootElement = document.getElementById("app")!;
-const queryClient = new QueryClient();
 
 if (!rootElement.innerHTML) {
   const root = ReactDOM.createRoot(rootElement);

@@ -8,7 +8,7 @@ export default defineConfig({
     entry: { index: "./src/main.tsx" },
     define: {
       "process.env": JSON.stringify({
-        GITHUB_TOKEN: process.env.GITHUB_TOKEN
+        GITHUB_TOKEN: process.env.GITHUB_TOKEN,
       }),
     },
   },
@@ -18,6 +18,11 @@ export default defineConfig({
   tools: {
     rspack: {
       plugins: [TanStackRouterRspack()],
+    },
+  },
+  resolve: {
+    alias: {
+      "@/*": ["./src/*"]
     },
   },
 });
