@@ -1,11 +1,13 @@
 import { useNavigate } from "@tanstack/react-router";
 import { FiInfo, FiMessageSquare } from "react-icons/fi";
 
-export const IssueItem = () => {
+export const IssueItem = ({ index }: { index: number }) => {
   const navigate = useNavigate({ from: "/issues/list" });
 
   return (
-    <div className="flex items-center px-2 py-3 mb-5 border rounded-md bg-slate-200 hover:bg-slate-300 transition-colors">
+    <div 
+      className="flex items-center px-2 py-3 mb-5 border rounded-md bg-slate-200 hover:bg-slate-300 transition-colors"
+    >
       <FiInfo size={30} color="red" className="min-w-10" />
       <div className="flex flex-col flex-grow px-2">
         <a onClick={() => navigate({ to: "/issues/issue/$id", params: { id: "123" } })} className="hover:underline">

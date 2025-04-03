@@ -15,7 +15,7 @@ export const LabelPicker = () => {
   if (!labelsQuery.data) return null;
 
   return (
-    <div className="flex flex-wrap gap-2 max-w-90">
+    <div className="flex flex-wrap gap-2 max-w-90 ">
       {labelsQuery.data.map(({ name, color, id }) => (
         <span
           key={id}
