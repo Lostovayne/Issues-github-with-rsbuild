@@ -1,4 +1,4 @@
-export const IssueSkeleton = ({ index }: { index: number }) => {
+export const IssueSkeleton = () => {
   return (
     <div className="flex items-center px-2 py-[19px] mb-5 border rounded-md bg-slate-200 animate-pulse">
       <div className="min-w-10 h-8 bg-gray-300 rounded"></div>

@@ -9,6 +9,7 @@ interface IssueListProps {
 
 export const IssueList = ({ issuesQuery }: IssueListProps) => {
   const issues: GithubIssue[] = issuesQuery.data || [];
+
   if (issuesQuery.isError) {
     return <div>Error: {issuesQuery.error.message}</div>;
   }
@@ -26,13 +27,13 @@ export const IssueList = ({ issuesQuery }: IssueListProps) => {
       {issuesQuery.isLoading || issues.length === 0 ? (
         <div className="mt-4">
           {Array.from({ length: 10 }).map((_, index) => (
-            <IssueSkeleton key={index} index={index} />
+            <IssueSkeleton key={index} />
           ))}
         </div>
       ) : (
         <div className="mt-4">
-          {issues.map((issue, index) => (
-            <IssueItem key={issue.id} index={index} />
+          {issues.map((issue) => (
+            <IssueItem key={issue.id} issue={issue} />
           ))}
         </div>
       )}
